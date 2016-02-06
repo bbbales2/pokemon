@@ -27,21 +27,6 @@ for i in range(1, 166):
 
     print i
 
-f = open(os.path.join(location, 'move_types.txt'))
-
-moveTypes = {}
-
-for line in f:
-    if len(line.strip()) > 0:
-        number, name, moveType = line.strip().split('\t')
-
-        moveTypes[int(number)] = moveType
-
-f.close()
-
-for move in moves.values():
-    move['type'] = moveTypes[move['id']]
-
 f = open(os.path.join(location, 'pokemon_data.txt'), 'w')
 f.write(json.dumps([pokemons, moves]))
 f.close()
