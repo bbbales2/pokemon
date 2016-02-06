@@ -1,0 +1,166 @@
+1	Pound	Normal
+2	Karate Chop*	Fighting
+3	Double Slap	Normal
+4	Comet Punch	Normal
+5	Mega Punch	Normal
+6	Pay Day	Normal
+7	Fire Punch	Fire
+8	Ice Punch	Ice
+9	Thunder Punch	Electric
+10	Scratch	Normal
+11	Vice Grip	Normal
+12	Guillotine	Normal
+13	Razor Wind	Normal
+14	Swords Dance	Normal
+15	Cut	Normal
+16	Gust*	Flying
+17	Wing Attack	Flying
+18	Whirlwind	Normal
+19	Fly	Flying
+20	Bind	Normal
+21	Slam	Normal
+22	Vine Whip	Grass
+23	Stomp	Normal
+24	Double Kick	Fighting
+25	Mega Kick	Normal
+26	Jump Kick	Fighting
+27	Rolling Kick	Fighting
+28	Sand Attack*	Ground
+29	Headbutt	Normal
+30	Horn Attack	Normal
+31	Fury Attack	Normal
+32	Horn Drill	Normal
+33	Tackle	Normal
+34	Body Slam	Normal
+35	Wrap	Normal
+36	Take Down	Normal
+37	Thrash	Normal
+38	Double-Edge	Normal
+39	Tail Whip	Normal
+40	Poison Sting	Poison
+41	Twineedle	Bug
+42	Pin Missile	Bug
+43	Leer	Normal
+44	Bite*	Dark
+45	Growl	Normal
+46	Roar	Normal
+47	Sing	Normal
+48	Supersonic	Normal
+49	Sonic Boom	Normal
+50	Disable	Normal
+51	Acid	Poison
+52	Ember	Fire
+53	Flamethrower	Fire
+54	Mist	Ice
+55	Water Gun	Water
+56	Hydro Pump	Water
+57	Surf	Water
+58	Ice Beam	Ice
+59	Blizzard	Ice
+60	Psybeam	Psychic
+61	Bubble Beam	Water
+62	Aurora Beam	Ice
+63	Hyper Beam	Normal
+64	Peck	Flying
+65	Drill Peck	Flying
+66	Submission	Fighting
+67	Low Kick	Fighting
+68	Counter	Fighting
+69	Seismic Toss	Fighting
+70	Strength	Normal
+71	Absorb	Grass
+72	Mega Drain	Grass
+73	Leech Seed	Grass
+74	Growth	Normal
+75	Razor Leaf	Grass
+76	Solar Beam	Grass
+77	Poison Powder	Poison
+78	Stun Spore	Grass
+79	Sleep Powder	Grass
+80	Petal Dance	Grass
+81	String Shot	Bug
+82	Dragon Rage	Dragon
+83	Fire Spin	Fire
+84	Thunder Shock	Electric
+85	Thunderbolt	Electric
+86	Thunder Wave	Electric
+87	Thunder	Electric
+88	Rock Throw	Rock
+89	Earthquake	Ground
+90	Fissure	Ground
+91	Dig	Ground
+92	Toxic	Poison
+93	Confusion	Psychic
+94	Psychic	Psychic
+95	Hypnosis	Psychic
+96	Meditate	Psychic
+97	Agility	Psychic
+98	Quick Attack	Normal
+99	Rage	Normal
+100	Teleport	Psychic
+101	Night Shade	Ghost
+102	Mimic	Normal
+103	Screech	Normal
+104	Double Team	Normal
+105	Recover	Normal
+106	Harden	Normal
+107	Minimize	Normal
+108	Smokescreen	Normal
+109	Confuse Ray	Ghost
+110	Withdraw	Water
+111	Defense Curl	Normal
+112	Barrier	Psychic
+113	Light Screen	Psychic
+114	Haze	Ice
+115	Reflect	Psychic
+116	Focus Energy	Normal
+117	Bide	Normal
+118	Metronome	Normal
+119	Mirror Move	Flying
+120	Self-Destruct	Normal
+121	Egg Bomb	Normal
+122	Lick	Ghost
+123	Smog	Poison
+124	Sludge	Poison
+125	Bone Club	Ground
+126	Fire Blast	Fire
+127	Waterfall	Water
+128	Clamp	Water
+129	Swift	Normal
+130	Skull Bash	Normal
+131	Spike Cannon	Normal
+132	Constrict	Normal
+133	Amnesia	Psychic
+134	Kinesis	Psychic
+135	Soft-Boiled	Normal
+136	High Jump Kick	Fighting
+137	Glare	Normal
+138	Dream Eater	Psychic
+139	Poison Gas	Poison
+140	Barrage	Normal
+141	Leech Life	Bug
+142	Lovely Kiss	Normal
+143	Sky Attack	Flying
+144	Transform	Normal
+145	Bubble	Water
+146	Dizzy Punch	Normal
+147	Spore	Grass
+148	Flash	Normal
+149	Psywave	Psychic
+150	Splash	Normal
+151	Acid Armor	Poison
+152	Crabhammer	Water
+153	Explosion	Normal
+154	Fury Swipes	Normal
+155	Bonemerang	Ground
+156	Rest	Psychic
+157	Rock Slide	Rock
+158	Hyper Fang	Normal
+159	Sharpen	Normal
+160	Conversion	Normal
+161	Tri Attack	Normal
+162	Super Fang	Normal
+163	Slash	Normal
+164	Substitute	Normal
+165	Struggle	Normal
+
