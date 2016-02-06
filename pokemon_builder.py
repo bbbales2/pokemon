@@ -9,6 +9,21 @@ f = open(os.path.join(location, 'pokemon_data.txt'))
 pokemons, moves = json.loads(f.read())
 f.close()
 
+f = open(os.path.join(location, 'move_types.txt'))
+
+moveTypes = {}
+
+for line in f:
+    if len(line.strip()) > 0:
+        number, name, moveType = line.strip().split('\t')
+
+        moveTypes[int(number)] = moveType
+
+f.close()
+
+for move in moves.values():
+    move['type'] = moveTypes[move['id']]
+
 def make(level, pokemon_id = None):
     if pokemon_id == None:
         idx = numpy.random.randint(0, len(pokemons))
@@ -28,6 +43,8 @@ def make(level, pokemon_id = None):
         if move['name'] in moves and moves[move['name']]['power'] > 0 and move['learn_type'] == 'level up' and level >= move['level']:
             potential_moves.append((move['level'], moves[move['name']]))
 
+    validTypes = ['normal', 'fire', 'water', 'electric', 'grass', 'ice', 'fighting', 'poison', 'ground', 'flying', 'psychic', 'bug', 'rock', 'ghost', 'dragon']
+
     generated['moves'] = []
     for level, move in sorted(potential_moves, key = lambda x : x[0], reverse = True)[0:4]:
         generated['moves'].append({
@@ -39,9 +56,18 @@ def make(level, pokemon_id = None):
             'id' : move['id']
         })
 
+        if str(move['type']).lower() not in validTypes:
+            raise Exception("{0} is not a valid attack type for move {1}".format(str(move['type']).lower(), move['name']))
+
     generated['name'] = pokemon['name'].lower()
     generated['id'] = idx + 1
-    generated['type'] = set([t['name'] for t in pokemon['types']])
+    generated['type'] = set([str(t['name']).lower() for t in pokemon['types'] if str(t['name']).lower() in validTypes])
+
+    if len(generated['type']) == 0:
+        generated['type'] = set(['Normal'])
+
+    generated['level'] = level
+
     return generated
 #%%
 
