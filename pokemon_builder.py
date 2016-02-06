@@ -42,7 +42,7 @@ def make(level, pokemon_id = None):
     generated['name'] = pokemon['name'].lower()
     generated['id'] = idx + 1
     generated['type'] = set([t['name'] for t in pokemon['types']])
-
+    generated['level'] = level
     return generated
 #%%
 

@@ -60,17 +60,17 @@ effectTable = [
 
 
 def getAtkName(mType):
-	"attack" if (moveType(mType) ==0) else "sp_atk"
+	"attack" if (moveType[mType] ==0) else "sp_atk"
 
 def getDefName(mType):
-	"defense" if (moveType(mType) ==0) else "sp_def"
+	"defense" if (moveType[mType] ==0) else "sp_def"
 
 def getEffect(atkType, defType):
-	return effectTable[typeMap[atkType]][typeMap[defType]
+	return effectTable[typeMap[atkType]][typeMap[defType]]
 
 
 def damageEq(atkLevel, atkStat, atkBase, defStat, STAB, effect):
-	return lambda (x): ((((2*atkLevel)/5+2)*atkStat*atkBase)/(defStat*50)+2)*STAB*effect*x
+	return lambda x: ((((2*atkLevel)/5+2)*atkStat*atkBase)/(defStat*50)+2)*STAB*effect*x
 
 def damage(atkLevel, atkStat, atkBase, defStat, STAB, effect):
 	return damageEq(atkLevel, atkStat, atkBase, defStat, STAB, effect)(random.uniform(.85,1))
