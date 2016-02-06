@@ -88,7 +88,7 @@ def critChance(speed,highCrit):
 	return  min(1, speed/ (64 if highCrit else 512))
 
 def isCritical(speed,highCrit):
-	return 2 if(critChance(speed,highCrit) < random.random()) else 1
+	return 2 if(critChance(speed,highCrit) > random.random()) else 1
 
 #yeilds the damage done by an attacker performing a move on a defender
 def attackEq(attacker, move, defender, crit, damageF):
