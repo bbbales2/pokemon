@@ -18,7 +18,7 @@ def make(level, pokemon_id = None):
     generated = {}
 
     pokemon = pokemons[idx]
-
+    generated['level'] = level
     generated['hp'] = ((pokemon['hp'] + 8) * 2 * level) / 100.0 + level + 10
     for stat in ['attack', 'defense', 'speed', 'sp_atk', 'sp_def']:
         generated[stat] = ((pokemon[stat] + 8) * 2 * level) / 100.0 + 5
@@ -42,7 +42,6 @@ def make(level, pokemon_id = None):
     generated['name'] = pokemon['name'].lower()
     generated['id'] = idx + 1
     generated['type'] = set([t['name'] for t in pokemon['types']])
-    generated['level'] = level
     return generated
 #%%
 

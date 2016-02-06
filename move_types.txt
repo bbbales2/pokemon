@@ -41,7 +41,7 @@
 41	Twineedle	Bug
 42	Pin Missile	Bug
 43	Leer	Normal
-44	Bite*	Dark
+44	Bite*	Normal
 45	Growl	Normal
 46	Roar	Normal
 47	Sing	Normal
